@@ -1,0 +1,3 @@
+# Project exclude paths
+/bll-social-network/target/
+.idea

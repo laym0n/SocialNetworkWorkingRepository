@@ -1,0 +1,11 @@
+package entities.chat;
+
+public enum ChatChangeEventType {
+    CHAT_CREATED,
+    MESSAGE_EDITED,
+    NEW_MESSAGE_WAS_SENT,
+    MESSAGE_DELETED,
+    NEW_CHAT_MEMBER_ADDED,
+    CHAT_MEMBER_LEAVED,
+    CHAT_MEMBER_CHANGED_INFO
+}
