@@ -21,6 +21,6 @@ public class SignUpRequest {
     public User getUser() {
         Map<Integer, UserRole> roles = new HashMap<>();
         roles.put(UserRole.SIMPLE_USER.getIdGroup(), UserRole.SIMPLE_USER);
-        return new User(userName, password, firstName, secondName, roles);
+        return new User(userName, password, roles);
     }
 }

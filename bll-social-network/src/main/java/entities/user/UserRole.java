@@ -4,11 +4,13 @@ import lombok.Getter;
 
 @Getter
 public enum UserRole {
-    SIMPLE_USER(0),
-    ADMIN(0);
+    SIMPLE_USER(0, 10),
+    ADMIN(0, 50);
     int idGroup;
+    int power;
 
-    UserRole(int idGroup) {
+    UserRole(int idGroup, int power) {
         this.idGroup = idGroup;
+        this.power = power;
     }
 }

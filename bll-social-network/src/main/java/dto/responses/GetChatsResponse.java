@@ -1,12 +1,12 @@
 package dto.responses;
 
-import entities.chat.Chat;
+import entities.chat.chatimpl.groupchat.GroupChat;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
 public class GetChatsResponse {
-    public GetChatsResponse(List<Chat> chatForUser) {
+    public GetChatsResponse(List<GroupChat> groupChatForUser) {
     }
 }

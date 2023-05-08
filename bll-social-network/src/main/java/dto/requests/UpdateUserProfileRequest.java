@@ -2,9 +2,11 @@ package dto.requests;
 
 import entities.user.UserInfo;
 import entities.user.UserProfile;
+import lombok.Data;
 
 import java.time.OffsetDateTime;
 
+@Data
 public class UpdateUserProfileRequest {
     private int idUser;
     private OffsetDateTime newBirthday;

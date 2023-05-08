@@ -1,9 +1,12 @@
 package entities.user;
 
+import entities.Ban;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @Data
@@ -14,4 +17,12 @@ public class User {
     private String userName;
     private String password;
     private Map<Integer, UserRole> roles;
+    private List<Ban> bans = new ArrayList<>();
+    protected boolean isBlocked;
+
+    public User(String userName, String password, Map<Integer, UserRole> roles) {
+        this.userName = userName;
+        this.password = password;
+        this.roles = roles;
+    }
 }
