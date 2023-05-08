@@ -1,6 +1,6 @@
 package entities.user;
 
-import entities.Ban;
+import entities.administrateentities.Ban;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

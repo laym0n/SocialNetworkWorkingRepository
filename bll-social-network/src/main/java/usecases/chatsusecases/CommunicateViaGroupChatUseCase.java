@@ -1,8 +1,6 @@
 package usecases.chatsusecases;
 
-import dto.requests.DeleteMessageRequest;
-import dto.requests.EditMessageRequest;
-import dto.requests.SendMessageRequest;
+import dto.requests.*;
 
 public interface CommunicateViaGroupChatUseCase {
     void sendMessage(SendMessageRequest request);
@@ -10,4 +8,8 @@ public interface CommunicateViaGroupChatUseCase {
     void deleteMessage(DeleteMessageRequest deleteMessageRequest);
 
     void editMessage(EditMessageRequest request);
+
+    void clearMessageHistory(ClearMessageHistoryRequest request);
+
+    void deleteMessageOnlyForUser(DeleteMessageOnlyForUserRequest request);
 }

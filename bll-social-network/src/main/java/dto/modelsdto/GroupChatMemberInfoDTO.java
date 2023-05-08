@@ -1,6 +1,6 @@
 package dto.modelsdto;
 
-import entities.chat.GroupChatMemberInfo;
+import entities.chat.chatmemberinfo.GroupUserChatMemberInfo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,7 +13,7 @@ import java.util.List;
 public class GroupChatMemberInfoDTO {
     private List<String> newRolesForChatMember;
 
-    public GroupChatMemberInfo getGroupChatMemberInfo() {
+    public GroupUserChatMemberInfo getGroupChatMemberInfo() {
         return null;
     }
 }

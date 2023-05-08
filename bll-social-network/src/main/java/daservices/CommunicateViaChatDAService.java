@@ -15,4 +15,6 @@ public interface CommunicateViaChatDAService {
     void addEventToChatChangeHistory(ChatNewMessageSentEvent event, int chatId);
 
     int userIdWithMessage(int idChat, int orderIdMessage);
+
+    void addMessageToDeletedForChatMember(int idChatMember, int chatId, int orderIdMessage);
 }

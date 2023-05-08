@@ -1,7 +1,7 @@
 package daservices;
 
-import entities.chat.GroupChatMember;
-import entities.chat.GroupChatMemberInfo;
+import entities.chat.chatmemberinfo.GroupChatMember;
+import entities.chat.chatmemberinfo.GroupUserChatMemberInfo;
 import entities.chat.chatimpl.groupchat.*;
 import entities.chat.changeshistory.chatchangeevents.*;
 
@@ -21,7 +21,7 @@ public interface ManageChatsDAService {
 
     GroupChatMember removeChatMemberFromChatAndAddEvent(int idMemberForDelete, ChatMemberLeavedEvent event);
 
-    void updateChatMemberInfoAndAddEvent(GroupChatMemberInfo newChatMemberRoles, int idChatMemberForEdit, int idChat, ChatMemberChangedInfoEvent event);
+    void updateChatMemberInfoAndAddEvent(GroupUserChatMemberInfo newChatMemberRoles, int idChatMemberForEdit, int idChat, ChatMemberChangedInfoEvent event);
 
     void updateGroupChatInfoAndSaveEvent(GroupChatInfo chatInfo, int idChat, ChatInfoChangedEvent event);
 

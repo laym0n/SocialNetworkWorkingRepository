@@ -1,6 +1,6 @@
 package daservices;
 
-import entities.Ban;
+import entities.administrateentities.Ban;
 import entities.chat.changeshistory.chatchangeevents.ChatMemberBlockedEvent;
 import entities.chat.changeshistory.chatchangeevents.ChatMessageBlockedEvent;
 

@@ -1,6 +1,6 @@
 package entities.chat;
 
-import entities.Ban;
+import entities.administrateentities.Ban;
 import entities.chat.messages.Message;
 import lombok.AllArgsConstructor;
 import lombok.Data;

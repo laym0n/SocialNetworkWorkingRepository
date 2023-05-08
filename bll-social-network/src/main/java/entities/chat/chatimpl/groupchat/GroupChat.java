@@ -1,21 +1,20 @@
 package entities.chat.chatimpl.groupchat;
 
-import entities.chat.GroupChatMember;
+import entities.chat.Chat;
+import entities.chat.chatmemberinfo.GroupChatMember;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GroupChat {
+public class GroupChat extends Chat {
     private GroupChatInfo groupChatInfo;
-    private Map<Integer, GroupChatMember> members = new HashMap<>();
-
-    public GroupChat(GroupChatInfo groupChatInfo) {
-        this.groupChatInfo = groupChatInfo;
-    }
+    private List<GroupChatMember> members = new ArrayList<>();
 }

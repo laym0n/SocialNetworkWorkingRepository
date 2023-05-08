@@ -1,6 +1,6 @@
 package dto.modelsdto.messages;
 
-import entities.Ban;
+import entities.administrateentities.Ban;
 import lombok.Data;
 
 @Data
