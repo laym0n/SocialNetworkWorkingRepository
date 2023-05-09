@@ -57,7 +57,7 @@ public class CommunicateViaGroupGroupChatUseCaseImpl implements CommunicateViaGr
 
     @Override
     public void clearMessageHistory(ClearMessageHistoryRequest request) {
-
+        daService.setLastOrderIdOfMessageWhereStartReadingForChatMember(request.getIdChat(), request.getIdSenderRequest());
     }
 
     @Override

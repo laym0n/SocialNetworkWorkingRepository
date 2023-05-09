@@ -25,12 +25,12 @@ public class CheckAccessRightByContainsInChatImpl implements ManageGroupChatsUse
     @Override
     public void leaveFromChat(LeaveFromChatRequest request) {
         checkIfUserIsInChat(request.getIdChat(), request.getIdMemberOwnerRequest());
-        checkIfUserIsInChat(request.getIdChat(), request.getIdMemberForDelete());
+//        checkIfUserIsInChat(request.getIdChat(), request.getIdMemberForDelete());
         manageGroupChatsUseCase.leaveFromChat(request);
     }
 
     @Override
-    public void editChatMember(EditChatMemberRequest request) {
+    public void editChatMember(EditChatMemberProfileRequest request) {
         checkIfUserIsInChat(request.getIdChat(), request.getIdChatMemberForEdit());
         checkIfUserIsInChat(request.getIdChat(), request.getIdMemberRequestOwner());
         manageGroupChatsUseCase.editChatMember(request);

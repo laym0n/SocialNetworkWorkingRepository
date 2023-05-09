@@ -16,5 +16,5 @@ public class Chat {
     protected int id;
     protected List<Message> messages = new ArrayList<>();
     protected List<Ban> bans = new ArrayList<>();
-    protected boolean isBlocked;
+    protected boolean isBlocked = false;
 }

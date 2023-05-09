@@ -11,5 +11,6 @@ public class ChatMember {
     private int lastOrderIdOfCheckedEvent;
     private int lastOrderIdOfCheckedMessage;
     private Set<Integer> orderIdsDeletedMessages;
+    private int orderIdOfMessageWhereStartReading;
     private ChatMemberInfo info;
 }

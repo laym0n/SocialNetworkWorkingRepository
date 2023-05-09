@@ -9,7 +9,7 @@ public interface ManageGroupChatsUseCase {
 
     void leaveFromChat(LeaveFromChatRequest request);
 
-    void editChatMember(EditChatMemberRequest request);
+    void editChatMember(EditChatMemberProfileRequest request);
 
     void editChatInfo(EditChatRequest request);
 }

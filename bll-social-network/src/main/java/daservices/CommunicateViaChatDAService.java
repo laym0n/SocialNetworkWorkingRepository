@@ -17,4 +17,6 @@ public interface CommunicateViaChatDAService {
     int userIdWithMessage(int idChat, int orderIdMessage);
 
     void addMessageToDeletedForChatMember(int idChatMember, int chatId, int orderIdMessage);
+
+    void setLastOrderIdOfMessageWhereStartReadingForChatMember(int idChat, int idSenderRequest);
 }

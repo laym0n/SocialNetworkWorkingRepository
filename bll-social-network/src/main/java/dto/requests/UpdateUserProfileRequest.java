@@ -15,10 +15,11 @@ public class UpdateUserProfileRequest {
     private byte[] newAvatar;
 
     public UserProfile getUserProfile() {
-        return new UserProfile(
-                new UserInfo(idUser, newFirstName, newSecondName, newAvatar),
-                newBirthday,
-                null
-        );
+//        return new UserProfile(
+//                new UserInfo(idUser, newFirstName, newSecondName, newAvatar),
+//                newBirthday,
+//                null
+//        );
+        return null;
     }
 }

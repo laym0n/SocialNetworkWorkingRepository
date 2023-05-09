@@ -28,17 +28,17 @@ public class CheckingAccessRightsByRolesImpl implements ManageGroupChatsUseCase 
 
     @Override
     public void leaveFromChat(LeaveFromChatRequest request) {
-        checkIfFirstUserBiggerThanSecond(
-                request.getIdMemberOwnerRequest(),
-                request.getIdMemberForDelete(),
-                request.getIdChat()
-        );
+//        checkIfFirstUserBiggerThanSecond(
+//                request.getIdMemberOwnerRequest(),
+//                request.getIdMemberForDelete(),
+//                request.getIdChat()
+//        );
         manageGroupChatsUseCase.leaveFromChat(request);
 
     }
 
     @Override
-    public void editChatMember(EditChatMemberRequest request) {
+    public void editChatMember(EditChatMemberProfileRequest request) {
         checkIfFirstUserBiggerThanSecond(
                 request.getIdMemberRequestOwner(),
                 request.getIdChatMemberForEdit(),

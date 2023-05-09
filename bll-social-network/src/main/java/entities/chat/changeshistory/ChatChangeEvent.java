@@ -14,10 +14,4 @@ import java.util.List;
 public abstract class ChatChangeEvent {
     protected int orderId;
     protected ChatChangeEventType eventType;
-    protected List<Ban> bans = new ArrayList<>();
-
-    public ChatChangeEvent(int orderId, ChatChangeEventType eventType) {
-        this.orderId = orderId;
-        this.eventType = eventType;
-    }
 }

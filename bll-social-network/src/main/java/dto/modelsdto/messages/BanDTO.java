@@ -10,6 +10,7 @@ public class BanDTO {
     private String description;
 
     public Ban getBan() {
-        return new Ban(id, idBlocker, description);
+//        return new Ban(id, idBlocker, description);
+        return null;
     }
 }

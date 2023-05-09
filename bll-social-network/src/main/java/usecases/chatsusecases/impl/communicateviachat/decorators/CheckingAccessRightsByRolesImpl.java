@@ -1,10 +1,7 @@
 package usecases.chatsusecases.impl.communicateviachat.decorators;
 
 import daservices.CheckingAccessRightsByRolesDAService;
-import dto.requests.ClearMessageHistoryRequest;
-import dto.requests.DeleteMessageRequest;
-import dto.requests.EditMessageRequest;
-import dto.requests.SendMessageRequest;
+import dto.requests.*;
 import dto.requests.chat.*;
 import entities.chat.chatimpl.groupchat.ChatMemberRole;
 import entities.user.UserRole;
@@ -65,5 +62,10 @@ public class CheckingAccessRightsByRolesImpl implements CommunicateViaGroupChatU
     @Override
     public void clearMessageHistory(ClearMessageHistoryRequest request) {
         communicateViaGroupChatUseCase.clearMessageHistory(request);
+    }
+
+    @Override
+    public void deleteMessageOnlyForUser(DeleteMessageOnlyForUserRequest request) {
+
     }
 }

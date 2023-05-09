@@ -3,10 +3,8 @@ package dto.requests.chat;
 import dto.modelsdto.GroupChatMemberInfoDTO;
 import lombok.Data;
 
-import java.util.List;
-
 @Data
-public class EditChatMemberRequest {
+public class EditChatMemberProfileRequest {
     private int idMemberRequestOwner;
     private int idChatMemberForEdit;
     private int idChat;

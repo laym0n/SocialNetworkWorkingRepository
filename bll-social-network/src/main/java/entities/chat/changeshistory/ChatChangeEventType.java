@@ -2,6 +2,7 @@ package entities.chat.changeshistory;
 
 public enum ChatChangeEventType {
     CHAT_CREATED,
+    CHAT_DELETED,
     CHAT_INFO_CHANGED,
     MESSAGE_EDITED,
     NEW_MESSAGE_WAS_SENT,

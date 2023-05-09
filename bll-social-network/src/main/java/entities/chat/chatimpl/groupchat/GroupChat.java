@@ -12,9 +12,12 @@ import java.util.List;
 import java.util.Map;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class GroupChat extends Chat {
     private GroupChatInfo groupChatInfo;
     private List<GroupChatMember> members = new ArrayList<>();
+
+    public GroupChat(GroupChatInfo groupChatInfo) {
+        this.groupChatInfo = groupChatInfo;
+    }
 }
